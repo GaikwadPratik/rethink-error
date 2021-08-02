@@ -1,0 +1,26 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"declaration": false,
+		"declarationMap": false,
+		"esModuleInterop": true,
+		"importHelpers": true,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "dist",
+		"strict": true,
+		"strictNullChecks": true,
+		"target": "ES2021",
+		"lib": ["ES2021"],
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"skipLibCheck": true
+	}
+}
