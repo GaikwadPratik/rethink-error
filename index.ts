@@ -41,7 +41,7 @@ async function connectRethink() {
     silent: true,
     timeoutError: 5000,
     waitForHealthy: true,
-    db: "UnknownDb",
+    db: "TestRethinkErrorDB",
     user: "admin",
     password: process.env.PASSWORD as string,
     servers: [
@@ -55,7 +55,7 @@ async function connectRethink() {
 
 async function main() {
   await connectRethink();
-  const changeFeed = await r.table<any>("unknowTable")
+  const changeFeed = await r.table<any>("TestRethinkErrorTable")
       .changes({ includeInitial: true, squash: false })
       .run();
 
